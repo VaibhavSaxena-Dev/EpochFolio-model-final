@@ -83,7 +83,7 @@ const Contact = () => {
     setSubmitting(true);
 
 // 🔥 BACKEND CALL (IMMEDIATE)
-fetch("http://localhost:5000/contact", {
+fetch(`${import.meta.env.PORT}/contact`, {
   method: "POST",
   headers: {
     "Content-Type": "application/json",
